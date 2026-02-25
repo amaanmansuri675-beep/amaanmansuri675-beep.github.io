@@ -1,0 +1,359 @@
+```html
+
+
+
+
+
+Amaan Mansuri | Premium Car Sales
+
+/* General Styles */
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+line-height: 1.6;
+color: #333;
+background-color: #f4f4f4;
+}
+/* Header & Navigation */
+header {
+background: #2c3e50;
+color: #fff;
+padding: 1rem;
+text-align: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+/* Hero Section */
+.hero {
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url('images.unsplash.com');
+background-size: cover;
+background-position: center;
+height: 60vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+text-align: center;
+padding: 0 20px;
+}
+.hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+.hero p { font-size: 1.2rem; }
+/* Inventory Section */
+.container {
+max-width: 1100px;
+margin: 20px auto;
+padding: 20px;
+}
+.car-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+}
+.car-card {
+background: white;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+}
+.car-card:hover { transform: translateY(-5px); }
+.car-card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+.car-info { padding: 15px; }
+.car-info h3 { margin: 0 0 10px 0; }
+.price { color: #e74c3c; font-weight: bold; font-size: 1.2rem; }
+/* Contact Button */
+.btn {
+display: inline-block;
+background: #27ae60;
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+margin-top: 10px;
+}
+/* Footer */
+footer {
+background: #2c3e50;
+color: white;
+text-align: center;
+padding: 2rem 0;
+margin-top: 40px;
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+.hero h1 { font-size: 1.8rem; }
+.hero p { font-size: 1rem; }
+}
+
+
+
+Amaan Mansuri Motors
+
+Drive Your Dream Today
+Quality pre-owned vehicles curated by Amaan Mansuri
+
+Current Inventory
+
+
+
+
+
+2022 BMW M4
+Milage: 12,000 miles | Automatic
+$65,000
+Inquire Now
+
+
+
+
+
+2021 Porsche 911
+Milage: 5,000 miles | Manual
+$110,000
+Inquire Now
+
+
+
+
+
+2023 Range Rover
+Milage: 2,500 miles | AWD
+$95,000
+Inquire Now
+
+
+
+
+© 2023 Amaan Mansuri. All Rights Reserved.
+Contact: +1 (555) 000-0000 | amaan@example.com
+
+
+---
+
+### Features I've Included:
+*   **Mobile-First Design:** The car cards will stack vertically on small phones and sit side-by-side on laptops.
+*   **High-Quality Placeholders:** I used images from Unsplash so the site looks professional immediately.
+*   **Lead Generation:** Every car has an "Inquire Now" button that opens the user's email app.
+*   **Fast Loading:** No external heavy frameworks (like Bootstrap) are used; it's pure HTML and CSS for maximum speed.
+
+### How to use this on GitHub:
+1.  Go to your GitHub repository.
+2.  Click **Add file** -> **Create new file**.
+3.  Name it `index.html`.
+4.  Paste the code above and click **Commit changes**.
+5.  Go to **Settings** > **Pages** to enable "GitHub Pages" so you can view the live link.
+
+Would you like me to add a contact form or a specific section for "Customer Reviews" to the page?</rewrite>
+
+
+
+This is a clean, modern, and mobile-responsive single-page template designed specifically for a car dealership. It uses a "Mobile-First" approach, meaning it looks great on a phone and automatically scales up for tablets and desktops.
+Features Included:
+Responsive Grid: Car listings stack vertically on phones and spread into rows on laptops.
+High-Quality Placeholders: I used professional car imagery from Unsplash.
+Contact Integration: Buttons are set up to trigger emails automatically.
+The Code (index.html)
+Copy and paste this entire block into your file on GitHub:
+```html
+
+
+
+
+
+Amaan Mansuri | Premium Car Sales
+
+
+:root {
+--primary: #1a1a1a;
+--accent: #d35400;
+--light: #f4f4f4;
+}
+body {
+font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: var(--light);
+color: #333;
+}
+/* Header */
+header {
+background-color: var(--primary);
+color: white;
+padding: 1.5rem;
+text-align: center;
+border-bottom: 4px solid var(--accent);
+}
+/* Hero Section */
+.hero {
+background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url('images.unsplash.com');
+background-size: cover;
+background-position: center;
+color: white;
+padding: 60px 20px;
+text-align: center;
+}
+.hero h1 { margin: 0; font-size: 2.5rem; }
+.hero p { font-size: 1.1rem; opacity: 0.9; }
+/* Inventory Grid */
+.container {
+max-width: 1100px;
+margin: 20px auto;
+padding: 0 15px;
+}
+.section-title {
+text-align: center;
+margin: 30px 0;
+}
+.car-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 25px;
+}
+.car-card {
+background: white;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+}
+.car-card:hover {
+transform: translateY(-5px);
+}
+.car-card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+.car-content {
+padding: 20px;
+}
+.car-content h3 {
+margin: 0 0 10px 0;
+font-size: 1.4rem;
+}
+.price {
+font-size: 1.5rem;
+color: var(--accent);
+font-weight: bold;
+display: block;
+margin-bottom: 15px;
+}
+.specs {
+font-size: 0.9rem;
+color: #666;
+margin-bottom: 20px;
+display: flex;
+justify-content: space-between;
+}
+/* Buttons */
+.btn {
+display: block;
+text-align: center;
+background-color: var(--primary);
+color: white;
+text-decoration: none;
+padding: 12px;
+border-radius: 6px;
+font-weight: bold;
+transition: background 0.3s;
+}
+.btn:hover {
+background-color: var(--accent);
+}
+/* Footer */
+footer {
+background: var(--primary);
+color: white;
+text-align: center;
+padding: 40px 20px;
+margin-top: 50px;
+}
+.contact-info {
+margin-bottom: 20px;
+}
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+.hero h1 { font-size: 1.8rem; }
+.car-grid { grid-template-columns: 1fr; }
+}
+
+
+
+AMAAN MANSURI MOTORS
+
+Find Your Perfect Drive
+Expertly curated vehicles. Transparent pricing. Professional service.
+
+Latest Arrivals
+
+
+
+
+
+2022 BMW M4 CS
+
+12,500 Miles
+Automatic
+
+$72,900
+Contact Amaan
+
+
+
+
+
+2021 Porsche 911
+
+8,200 Miles
+Manual
+
+$115,000
+Contact Amaan
+
+
+
+
+
+2023 Range Rover Sport
+
+3,100 Miles
+AWD
+
+$98,000
+Contact Amaan
+
+
+
+
+
+Get In Touch
+Owned & Operated by Amaan Mansuri
+📍 123 Dealership Way, Luxury Auto District
+📞 +1 (555) 123-4567
+
+© 2023 Amaan Mansuri Motors. All Rights Reserved.
+
+
+---
+
+### How to use this on GitHub:
+1.  Go to your GitHub repository.
+2.  Click **Add file** > **Create new file**.
+3.  Name the file `index.html`.
+4.  Paste the code above.
+5.  Click **Commit changes**.
+6.  Go to **Settings** > **Pages**, and set the branch to `main` to see your live website!
+
+**Would you like me to add a "Search" bar or a "Sell Your Car" form to this page?**</rewrite>
+
+
+
