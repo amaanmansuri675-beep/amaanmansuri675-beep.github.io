@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amaan Home Decor Showroom</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+/* HEADER */
+header{
+background:#000;
+padding:20px;
+text-align:center;
+border-bottom:2px solid #c19a6b;
+}
+
+header h1{
+color:#c19a6b;
+letter-spacing:2px;
+}
+
+/* NAVBAR */
+nav{
+background:#111;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+nav a{
+padding:15px 25px;
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+nav a:hover{
+background:#c19a6b;
+}
+
+/* HERO */
+.hero{
+height:85vh;
+background:url("https://images.unsplash.com/photo-1600210492493-0946911123ea") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-box{
+background:rgba(0,0,0,0.7);
+padding:40px;
+border-radius:12px;
+}
+
+.hero h2{
+font-size:48px;
+color:#c19a6b;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+/* FEATURES */
+.features{
+padding:60px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.feature{
+background:#181818;
+padding:30px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.feature:hover{
+transform:translateY(-10px);
+}
+
+.feature h3{
+color:#c19a6b;
+margin-bottom:10px;
+}
+
+/* PRODUCTS PREVIEW */
+.products{
+padding:60px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#c19a6b;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:#181818;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+text-align:center;
+}
+
+.price{
+color:#c19a6b;
+font-size:20px;
+font-weight:bold;
+margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+background:#000;
+padding:20px;
+text-align:center;
+border-top:2px solid #c19a6b;
+margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Amaan Home Decor Showroom</h1>
+<p>Luxury Home Furnishing & Decor</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="contactus.html">Contact</a>
+</nav>
+
+<section class="hero">
+<div class="hero-box">
+<h2>Transform Your Home Into Luxury</h2>
+<p>Premium Decor • Modern Designs • Best Prices</p>
+</div>
+</section>
+
+<section class="features">
+
+<div class="feature">
+<h3>Premium Quality</h3>
+<p>High-quality luxury home decor products</p>
+</div>
+
+<div class="feature">
+<h3>Affordable Prices</h3>
+<p>Best showroom prices guaranteed</p>
+</div>
+
+<div class="feature">
+<h3>Modern Designs</h3>
+<p>Latest trending home furnishing styles</p>
+</div>
+
+</section>
+
+<section class="products">
+
+<h2 class="section-title">Featured Products</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1616628182506-8f4c2b8c4a6c">
+<div class="card-content">
+<h3>Luxury Wall Decor</h3>
+<p class="price">₹999</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+<div class="card-content">
+<h3>Premium Sofa</h3>
+<p class="price">₹15,999</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598300056393-4aac492f4344">
+<div class="card-content">
+<h3>Designer Lamp</h3>
+<p class="price">₹1,499</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Amaan Home Decor Showroom | Owner: Amaan Mansuri
+</footer>
+
+</body>
+</html>
